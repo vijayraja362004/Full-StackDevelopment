@@ -1,0 +1,44 @@
+<!--<h1>Interpolation Example</h1>
+<br>
+<b>
+  Name:{{name}} <br>
+  age:{{age}} <br>
+  email: <input type="text" value=" {{email}}"/><br>
+  <h1>Property Binding</h1>
+  name: <input type="text" [value]="name"/> <br>
+  age: <input type="number"[value]="age"/> <br>
+  email: <input type="text" [value]="email"/> <br>
+  <h1>Event Binding</h1>
+  <button (click)="changename()">Change name</button>
+  <br>
+  <img [src]="pic" width="300"height="200"/>
+  <br>
+  <button style="border-radius: 20px; background-color: yellowgreen;" (click)="redo()">Change image</button>
+</b>
+
+<h1>Two data Binding</h1>
+<br>
+<input type="text" placeholder="Enter the name" [(ngModel)]="fname"><br>
+<b>Welcome {{fname}}</b>-->
+<h1 [ngClass]="myClass">Structural And Attribute Directive Example</h1>
+<br>
+<button (click)="changeflag()">Show or Hide Div</button>
+<br>
+<div *ngIf="flag" [ngStyle]="myStyle">
+  <br>
+  <ul>
+    <li *ngFor = "let v of vehicles" (click)="setSelectedItem(v)">{{v}}</li>
+    <br>
+    <b>You have selected :{{selec}}</b>
+    <br>
+    <div [ngSwitch]="selectedVehicle">
+      <font color="green" *ngSwitchCase="'Series 5'">5 Series</font>
+      <font color="green" *ngSwitchCase="'M4'">5 Series</font>
+      <font color="green" *ngSwitchCase="'M5'">5 Series</font>
+      <font color="green" *ngSwitchCaseDefault>Invalid</font>
+    </div>
+    <br>
+    <button (click)="changeStyle()">Change style</button>
+    <button (click)="changeClass()"> change</button>
+  </ul>
+</div>
