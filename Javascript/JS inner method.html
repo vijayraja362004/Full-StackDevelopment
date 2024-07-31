@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>JavaScript funcions</title>
+        <script>
+        function calculator(){
+            let a=parseInt (document.getElementById("n1").value);
+            let b=parseInt (document.getElementById("n2").value);
+            let op=document.getElementById("op").value;
+
+            let result = "";
+
+            if( op==  "add"){
+                result=  "addition :"+(a+b);
+            }
+            if(op== "sub"){
+                result ="subraction :"+ (a-b);
+            }
+            if(op=="multi"){
+                result="muliple :" +(a*b);
+            }
+            if(op=="division"){
+                result="division :"+(a/b);
+            }
+            document.getElementById("resultDiv").innerHTML=result;
+        }
+        </script>
+    </head>
+    <body>
+        Enter First Number <input type="text" id="n1"/>
+        <br>
+        Enter Second Number <input type="text" id="n2"/>
+        <br>
+        Select the operator<select id="op">
+            <option value="add">addition</option>
+            <option value="sub">subraction</option>
+            <option value="multi">multiple</option>
+            <option value="division">division</option>
+        </select>
+        <br>
+        <button onclick="calculator()"> calculate</button>
+        <br>
+        <div id="resultDiv"></div>
+    </body>
+</html>

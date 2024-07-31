@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>JavaScript prompt</title>
+      <script>
+        function welcome() {
+            alert("hi!,welcome");
+        }
+        function greetings() {
+            let  name = prompt("Enter Your Name :");
+            alert("welcome "+name);
+        }
+        function leave() {
+            confirm("do you leave this page ?");
+        }
+        </script>
+    </head>
+    <body onload="welcome()" onunload="leave()">
+        <button onclick="greetings()"> say welcome</button>
+    </body>
+
+</html>

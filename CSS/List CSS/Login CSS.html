@@ -1,0 +1,46 @@
+<html>
+    <head>
+    <title>
+        login Page
+    </title>
+    <style>
+        .log{
+            border: 3px solid black;
+            width :400px;
+            height: 180px;
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%,-50%);
+            border-radius: 25px;
+            background-color: aqua;
+        }
+        #login{
+            width: 50px;
+            height: 20px;
+            border-radius: 25px;
+            background-color: green;
+        }
+        #reset{
+            width: 50px;
+            height: 20px;
+            border-radius: 25px;
+            background-color: red;
+        }
+    </style>
+    <body>
+        <center><h1> Wellcome To Login page</h1></center><hr>
+        <div class="log">
+        <form border="1" width="50" align="center">
+            <label for="username"> Username :</label>
+            <input type=" text" id="username" name ="username" placeholder="Enter your email"><br><br>
+            <label for="password">Password :</label>
+            <input type="password" id="password" name ="password" placeholder="Enter your password"><br><br>
+            <input type="submit" id="login"value="login">
+            <input type="reset"  id="reset"value="reset">
+            <br><br>
+            <input type="button" value="cancel">
+        </form></div>
+    </body>
+</head>
+</html>

@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>JavaScript funcions</title>
+        <script>
+           /* function myFuncions (){
+                document.write("<b> Javascript function Examples </b>");
+            }
+            function addition(a,b){
+                let sum=a+b;
+                document.write("<b>Sum = "+sum);
+            }
+            function subration(a,b){
+                let sub=a-b;
+                document.write("<b>sub = "+sub);
+
+            }*/
+            function myFuncions(){
+                var str=document.getElementById("str").value;
+                var str2="";
+                for(let i=str.length-1;i>=0;i--){
+                    str2+=str.charAt(i);
+                
+                }
+                document.getElementById("result").innerHTML=str2;
+            }
+            
+        </script>
+
+    </head>
+    <body>
+      
+      <input type="text" id="str"><button onclick="myFuncions()">click me</button>
+        <div id="result"></div>
+    </body>
+</html>

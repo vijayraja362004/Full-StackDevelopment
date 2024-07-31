@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title></title>
+        <body>
+        <script>
+            const sum = () =>10 + 20;
+            document.write("<br> Addition : "+sum());
+
+            const sub= (x,y) =>x-y;
+            document.write("<br> Subraction : "+sub(40,20));
+
+            const multi= (x,y) =>{return (x*y) };
+            document.write("<br> Multiple : "+multi(10,300));
+            
+            const big = (x,y) =>{
+                if(x>y){
+                    return x;
+                }
+                    else{
+                        return y;
+                    }
+                };
+            document.write("<br> Biggest number  : "+big(10,30));
+            const fact = (x) =>{
+                let fact ="1";
+            for(let i=1;i<=x;i++){
+                 fact=fact*i;
+            }
+            return fact;
+            }
+            document.write("<br> factorial value is :"+fact(10));
+        </script>
+    </head>
+    </body>
+</html>

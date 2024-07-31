@@ -1,0 +1,8 @@
+.MyHeadings-1{
+    border: 2px solid rgb(5, 5, 34);
+    text-align: center;
+    width : 60%;
+    color: rgb(2, 21, 26);
+    background-color: rgb(224, 30, 150);
+    cursor: pointer;
+}

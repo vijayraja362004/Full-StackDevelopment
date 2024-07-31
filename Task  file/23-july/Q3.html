@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Q3</title>
+        <script>
+            function pattern(){
+            var a= parseInt(document.getElementById("n3").value);
+             var pattern = "";
+            for (let i = 1; i <=a; i++) {
+                for(let j=1;j<=i+1;j++){
+                    pattern+=i;
+                }
+                pattern+="<br>";
+            }
+            document.getElementById("output").innerHTML = pattern;
+        }
+        </script>
+    </head>
+    <body>
+        <div>
+            Enter the Number<input type="text" id="n3" placeholder="Enter the Number"><br><br>
+             <button onclick="pattern()">Check</button>
+             <div id="output"></div>
+    </body>
+</html>

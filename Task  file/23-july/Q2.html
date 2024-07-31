@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>Q2</title>
+    <Script>
+        function palindrome(){
+            var a = document.getElementById("n1").value;
+            let b="";
+            let c=0;
+            for(let i=a.length-1;i>=0;i--){
+                b+=a.charAt(i);
+            }
+            if(b==a){
+                document.write("palindrome");
+            }
+            else{
+                document.write(" Not a palindrome");
+            }
+        }
+    </Script>
+</head>
+<body><center>
+    <div class="main">
+       Enter the word <input type="text" id="n1" placeholder="Enter the String"><br><br>
+        <button onclick="palindrome()">Check</button>
+        <p id="output"></p>
+    </div>
+</body>
+</center>
+</html>

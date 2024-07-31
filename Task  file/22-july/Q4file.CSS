@@ -1,0 +1,41 @@
+.main{
+    border: 2px solid black;
+    width: 20vw;
+    height: 60vh;
+    display: flex;
+    border-radius: 5px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #808080;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.enter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.enter input {
+    font-size: 27px;
+    width: 80%;
+    padding: 10px;
+}
+.btns{
+    display: grid;
+    grid-template-columns:auto auto auto auto;
+    padding: 20px;
+    gap: 5px;
+}
+button{
+    width: 60px;
+    height:60px;
+    border-radius: 8px;
+    color: white;
+    border: 2px solid black;
+    font-size: 25px;
+    background-color: #22C3C3;
+}

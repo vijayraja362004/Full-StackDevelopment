@@ -1,0 +1,92 @@
+<html>
+    <head>
+        <title>Q4</title>
+    <script>
+        function String(){
+            let a =document.getElementById("n1").value;
+            let  text="";
+            let b=document.getElementById("n2").value;
+            if(b=="length"){
+                text=a.length;
+                document.write(text);
+            }
+            if(b=="charAt"){
+                text=a.charAt(1);
+                document.write(text);
+            }
+            if(b=="slice"){
+                text=a.slice(2,4);
+                document.write(text);
+            }
+            if(b=="substring"){
+                text=a.substring(3);
+                document.write(text);
+            }
+            if(b=="substr"){
+                text=a.substr(1,4);
+                document.write(text);
+            }
+            if(b=="toUppercase"){
+                text=a.toUpperCase();
+                document.write(text);
+            }
+            if(b=="toLowercase"){
+                text=a.toLowerCase();
+                document.write(text);
+            }
+            if(b=="concat"){
+                text=a.concat(" ","concat");
+                document.write(text);
+            }
+            if(b=="trim"){
+                text=a.trim(2);
+                document.write(text);
+            }
+            if(b=="trimstart"){
+                text=a.trimStart(3);
+                document.write(text);
+            }
+            if(b=="trimEnd"){
+                text=a.trimEnd;
+                document.write(text);
+            }
+            if(b=="repeat"){
+                text=a.repeat(4);
+                document.write(text);
+            }
+            if(b=="replace"){
+                text=a.replace(2,4);
+                document.write(text);
+            }
+            if(b=="replaceAll"){
+                text=a.replaceAll(3,6);
+                document.write(text);
+            }
+            if(b=="split"){
+                text=a.split;
+                document.write(text);
+            }
+        }
+    </script>
+    </head>
+    <body>
+        <select name=" " id="n2">
+        <option value="length">String length </option>
+        <option value="charAt">String charAt()</option>
+        <option value="slice">String slice()</option>
+        <option value="string">String substring()</option>
+        <option value="substr">String substr()</option>
+        <option value="toUppercase">String toUppercase()</option>
+        <option value="toLowercase">String toLowercase()</option>
+        <option value="concat">String concat()</option>
+        <option value="trim">String trim()</option>
+        <option value="trimstart">String trimstart()</option>
+        <option value="trimend">String trimend()</option>
+        <option value="repeat">String repeat()</option>
+        <option value="replace">String replace()</option>
+        <option value="replaceAll">string replaceAll()</option>
+        <option value="split">String split()</option></select>
+        <input type="text" id="n1">
+        <button onclick="String()"> check</button>
+    </body>
+</html>

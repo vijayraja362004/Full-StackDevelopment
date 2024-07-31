@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>Registration Form</title>
+    </head>
+    <center>
+    <body>
+        <h1> Registration form </h1><br>
+            <hr>
+            <br>
+            <style>
+               #log{
+            border: 3px solid black;
+            width :400px;
+            height: 450px;
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%,-50%);
+            border-radius: 25px;
+            background-color: aqua;
+        }
+        #login{
+            width: 50px;
+            height: 20px;
+            border-radius: 25px;
+            background-color: green;
+        }
+        #reset{
+            width: 50px;
+            height: 20px;
+            border-radius: 25px;
+            background-color: red;
+        }
+            </style>
+            <form id="log" align="center">
+                <table align="center">
+                    <tr><td>Name:</td><td><input type="text" placeholder="Enter your Name"></td></tr><br>
+                    <tr><td>Email</td><td><input type="text" placeholder="Enter your Email"></td></tr><br>
+                    <tr><td>D.O.B:</td><td><input type="date"></td></tr><br>
+                    <tr><td>Age</td><td><input type="text" placeholder="Enter your Age"></td></tr><br>
+                    <tr><td> Mobile No.</td><td><input type="text" placeholder="Enter your Mobile"></td></tr><br>
+                    <tr><td>Gender:</td><td><input type="radio" name="Gender">Male
+                        <input type="radio" name="Gender">Female</td> </tr>
+                    <tr><td>Select course : </td>
+                    <td><select>
+                        <option>python</option>
+                        <option>java</option>
+                        <option>c++</option>
+                        <option>html</option>
+                        </select></td></tr>
+                    <tr><td> Upload your resume:</td>
+                        <td><input type="file"></td></tr> 
+                    <tr>
+                        <td><input id="login"type="submit"></td> 
+                        <td><input  id="reset"type="reset"></td></tr>
+        </table>
+        </form>
+       
+    </body>
+</center>
+</html>

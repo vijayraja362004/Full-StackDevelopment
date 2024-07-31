@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>JavaScript Factorial</title>
+        <script>
+        function Factorial(){
+            let a=document.getElementById("n1").value;
+            let result ="1";
+            for(let i=1;i<=a;i++){
+                result =result*i;
+            }
+            document.getElementById("output").innerHTML= "Factorial number =" +result;
+        }
+        </script>
+    </head>
+    <body><center>
+        Enter the Number <input type="number" value="Enter the Number" onfocus =" this.value=' '" id="n1" onblur="Factorial()"/>
+        <br><br>
+        <div id="output"></div>
+    </body>
+    </center>
+</html>
