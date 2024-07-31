@@ -8,4 +8,7 @@ h1{
     border-radius: 25px;
     font-size: 39px;
 }
-
+body
+{
+    background-image: url("https://builtin.com/sites/www.builtin.com/files/food-delivery-companies.jpg");
+}

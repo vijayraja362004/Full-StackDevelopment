@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ServicenameService } from './servicename.service';
 
 @Component({
   selector: 'app-root',
@@ -16,21 +17,24 @@ export class AppComponent {
   selec:string;
   myStyle:{};
   myClass:string;
+  sum:number;
 
-  constructor(){
-    this.name = "Arun";
+  constructor(private calc :ServicenameService){
+    this.sum=calc.getAddition(10,20);
+   // this.sum=calc.getSubraction(10,20);
+    this.name = "Vijay";
     this.age = 20;
-    this.email = "arun33@gmail.com"
-    this.pic="https://imgs.search.brave.com/XOC7JgPGPOKRw7KFh5muDZK2IDKPuOk86kkjVXVPZDU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuaWRnZXNnLm5l/dC9pbWFnZXMvYXJ0/aWNsZS8yMDIwLzAy/L2NpYS10cmlhZF9z/ZWN1cml0eV90cmlh/bmdsZS1nbG93aW5n/X2JpbmFyeV9wcm9j/ZXNzX2J5LW5vbGlt/aXQ0Ni1nZXR0eV8y/NDAweDE2MDAtMTAw/ODMxNTg5LWxhcmdl/LmpwZz9hdXRvPXdl/YnAmcXVhbGl0eT04/NSw3MA";
+    this.email = "vijayraja33@gmail.com"
+    this.pic="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmka1151lcgF4UjzJdPgsDQOXhPyVI6sx7XA&s";
     this.fname=" ";
     this.flag=true;
-    this.vehicles=["series 5","m4","m5","Invalid"]
+    this.vehicles=["pulser","m4","m5","Invalid"]
     this.selec="";
     this.myStyle={'width':'40%','height':'40%','border':'2px solid green','border-radius':'25px'}
     this.myClass="MyClass1";
     }
   changename(){
-    this.name="aun";
+    this.name="arun";
     this.age=22;
     this.email="arn22@gmail.com"
   }

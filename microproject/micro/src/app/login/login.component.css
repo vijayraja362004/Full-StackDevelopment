@@ -1,0 +1,100 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+.head
+{
+    margin-top: 20px;
+    border-radius: 25px;
+    background-color: aqua;
+    border:solid black 3px;
+    padding: 20px;
+}
+.main
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+.main .sec
+{
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+    justify-content: center;
+}
+.main .sec .login
+{
+    box-shadow: 2px 2px 2px #333 , inset 1px 1px 3px #222;
+    padding: 20px;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 3.5rem;
+    border-radius: 10px;
+}
+.main .sec .login h1
+{
+    text-align: center;
+}
+.main .sec .login input
+{
+    width: 25vw;
+    border: none;
+    border-bottom: 2px solid #333;
+    padding: 10px 0px 10px 8px;
+    border-radius: 7px;
+}
+.main .sec .login  .btn
+{
+    display: flex;
+    margin-top: 20px;
+    gap: 4.5rem;
+}
+.main .sec .login .btn button
+{
+    padding: 8px 15px 8px 15px;
+    border: none;
+    border-radius: 5px;
+}
+.main .sec .login .btn .green
+{
+    background-color: green;
+    color: #fff;
+}
+.main .sec .login .btn .yellow
+{
+    background-color: yellow;
+}
+.main .sec .login .btn  .red
+{
+    background-color: red;
+}
+.main .sec .storage
+{
+    width: 30vw;
+    height: 49vh;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #333 , inset 1px 1px 3px #222;
+}
+body
+{
+    background-image: url("https://builtin.com/sites/www.builtin.com/files/food-delivery-companies.jpg");
+    background-size: cover;
+}
+h1{
+    background-color: aquamarine;
+    border-radius: 25px;
+    font-size: 39px;
+}
+#data{
+    background-color: aquamarine;
+    text-align: center;
+    border-radius: 25px;
+
+}
