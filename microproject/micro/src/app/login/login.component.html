@@ -14,21 +14,29 @@
     <div>
         <h1>Login</h1>
     </div>
-    <div><input type="number" placeholder="Enter ID"></div>
-    <div><input type="text" placeholder="Enter Name"></div>
-    <div><input type="number" placeholder="Enter Salary"></div>
-    <div ><input type="time" placeholder="Enter Login Time"></div>
-    <div><input type="time" placeholder="Enter Logout Time"></div>
+    <div><input  type="number" name="id"      placeholder="Enter ID"          [(ngModel)]="id" ></div>
+    <div><input  type="text"   name="name"    placeholder="Enter Name"        [(ngModel)]="name"></div>
+    <div><input  type="number" name="salary"  placeholder="Enter Salary"      [(ngModel)]="salary"></div>
+    <div ><input type="time"   name="timein"  placeholder="Enter Login Time"  [(ngModel)]="timein"></div>
+    <div><input  type="time"   name="timeout" placeholder="Enter Logout Time" [(ngModel)]="timeout"></div>
     <div class="btn">
-            <button class="green">Save</button>
+            <button class="green" (click)="display()">Save</button>
             <button class="yellow">Update</button>
             <button class="red">Delete</button>
+            <button class="blue">Find</button>
+            <button class="aqua">Find All</button>
     </div>
     </form>
     </div>
-    <div class="storage"><h1 id="data">Employee List</h1></div>
+    <div class="storage">
+        <h1 id="data">Employee List</h1>
+    <p>
+        <tr><th>Id</th><th>Name</th><th>Salary</th><th>LogIn Time</th><th>LogOut Time</th>
+            <td>{{displayid}}</td><td>{{displayname}}</td><td>{{displaysalary}}</td><td>{{displaytimein}}</td><td>{{displaytimeout}}</td></tr></p>
+</div>
     </div>
     </div>
     </div>
+
 </body>
 </html>
