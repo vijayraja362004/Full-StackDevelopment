@@ -28,12 +28,13 @@
     </div>
     </form>
     </div>
-    <div class="storage">
+    <div class="storage" style="border: 2px;"><br>
         <h1 id="data">Employee List</h1>
-    <p>
-        <tr><th>Id</th><th>Name</th><th>Salary</th><th>LogIn Time</th><th>LogOut Time</th>
-            <td>{{displayid}}</td><td>{{displayname}}</td><td>{{displaysalary}}</td><td>{{displaytimein}}</td><td>{{displaytimeout}}</td></tr></p>
-</div>
+    <table style="justify-content: center;display: flex;border-collapse: collapse;"border="1"width="90%" >
+        <tr><th >Id</th><th>Name</th><th>Salary</th><th>LogIn</th><th>LogOut</th></tr><br>
+            <tr><td>{{displayid}}</td><td>{{displayname}}</td><td>{{displaysalary}}</td><td>{{displaytimein}}</td><td>{{displaytimeout}}</td></tr>
+        </table>
+    </div>
     </div>
     </div>
     </div>

@@ -9,16 +9,24 @@ import { EmployeeService } from './employee.service';
 })
 export class AppComponent {
   employee :Employee;
+  result : string;
+  flag:Boolean;
+  service:any;
+  url:string;
+
   constructor(private service:EmployeeService){
     this.employee=new Employee();
+    this.result="";
+    this.flag=false;
   }
 
-  insert(data:any)
+  insertEmployee(data:any)
   {
     this.employee.empId=data.empId;
     this.employee.empName=data.empName;
     this.employee.empSalary=data.empSalary;
-    this.service.insertEmployee(this.employee);
-    alert(data.empId+" "+data.empName+" "+data.empSalary);
+   // this.service.insertEmployee(this.employee);
+   this.result=this.service.insertEmployee(this.employee);
+    //alert(data.empId+" "+data.empName+" "+data.empSalary);
   }
 }
